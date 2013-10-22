@@ -33,7 +33,7 @@
     				<label>Username</label>
     				<input type="text" name="use" size="15"/>
     				<label>Password</label>
-    				<input type="text" name="pass" size="15"/>
+    				<input type="password" name="pass" size="15"/>
     				<div class="form-controls">
     				<div class="controls">
     				
@@ -41,9 +41,12 @@
     				<input class="btn btn-danger" type="reset" value="Clear" name="Clear"/>
     			</div>
     		</div>
+            <input type="hidden" name="form-name" value="admin"/>
+        </form>
     	</div>
     </div>
 </div>
+
     </body>
 </head>
 </html>
