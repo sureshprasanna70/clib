@@ -1,0 +1,59 @@
+/*
+CSS Authored by Suresh Prasann V G 
+www.about.me/sureshprasannavg*/
+.banner
+{
+  
+  background-color: #D3E266;
+  color:black;
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  font-family: serif;
+  padding-bottom: 10px;
+}
+form
+{
+margin-left: 25%;
+}
+body
+{
+color: green;
+background-position: center center;
+background-repeat: no-repeat;
+background: -webkit-gradient(radial, center center, 0, center center, 460, from(#D3E266), to(#53A854));
+background: -webkit-radial-gradient(circle, #D3E266, #53A854);
+background: -moz-radial-gradient(circle, #D3E266, #53A854);
+background: -ms-radial-gradient(circle, #D3E266, #53A854);
+}
+nav,a
+{
+  background-color: #D3E266;
+  color:black;
+  vertical-align: 10px;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 25px;
+  letter-spacing: px;
+  
+}
+a:hover
+{
+  background-color: green;
+  color: black;
+  text-decoration: underline;
+}
+input
+{
+  line-height: 25px;
+  font-size: 20px;
+  margin-right: 10%;
+}
+.footer
+{
+  margin-bottom:0%;
+  text-align: left;
+}
+   
+    
