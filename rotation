@@ -1,0 +1,22 @@
+@keyframes rotater {
+0% { transform:rotate(0) scale(1) }
+50% { transform:rotate(360deg) scale(2) }
+100% { transform:rotate(720deg) scale(1) }
+
+a.advert:hover { 
+	/* safari / chrome / mozilla */
+	animation-name:rotater; 
+	animation-duration:500ms; 
+	animation-iteration-count:1; 
+	animation-timing-function: ease-out;
+
+	/* opera */
+	-o-transform:rotate(360deg) scale(2);
+	-o-transition-duration:500ms;
+	-o-transition-timing-function: ease-out;
+
+	/* ie */
+	-ms-transform:rotate(360deg) scale(2);
+	-ms-transform-duration:500ms;
+	-ms-transform-timing-function: ease-out;
+}

@@ -14,9 +14,15 @@ if(strcasecmp($from,"admin")==0)
 		{
 			if(strcmp($qui["password"],$u_pass)==0)
 			{
-				session_start("admin");
-				$_SESSION['idcard']=base64_encode("admin");
-				session_write_close("admin");
+				session_start('idcard');
+				$_SESSION['idcard']=md5("admin");
+				echo $_SESSION['idcard'];
+				
+				
+				
+				
+
+
 			}
 			else
 			{
@@ -26,9 +32,11 @@ if(strcasecmp($from,"admin")==0)
 		
 
 	}
+	
 }
 catch(Exception $e)
 {
 	echo $e;
 }
 ?>
+<a href="logout.php">LOgOut</a>

@@ -1,40 +1,22 @@
 <html>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <head>
-        <title>
-            CLIB|HOME
-        </title>
-    </head>
-    <body>
-           <?include('menu.php');?>
-            <div class="container">
-          <br><br><br><br><br><br>
-           <div class="row-fluid">
-            <div class="span12">
-           <form>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text"  class="search-query" placeholder="Search" name="term" size="50"> 
-                <input align="center" type="submit" class="btn-success btn-samll" value="Search"/>
-                <br>
-                <div class="span12 form-controls">
-                <div class="controls">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="type" value="prof">PROF&nbsp;&nbsp;
-                <input  type="radio" name="type" value="area">AREA&nbsp;&nbsp;     
-                <input type="radio" name="type" value="book">NAME&nbsp;&nbsp;
-                
-                </div>
-                </div>
-                
-                <br><br>
-                
-            </form>
-               
-           </div>        
-       </div>
-   </div>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/custom.js"></script>
 
-    </body>
+<title>
+  CUIC|HOME
+</title>
+</head>
+
+<body>
+<?php include('menu.php');?>
+
+	
+</body>
 
 </html>
