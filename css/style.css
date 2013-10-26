@@ -40,8 +40,8 @@ nav,a
 }
 a:hover
 {
-  background-color: green;
-  color: black;
+  
+  
   text-decoration: underline;
 }
 input
@@ -50,10 +50,19 @@ input
   font-size: 20px;
   margin-right: 10%;
 }
+.se
+{
+  display: inline;
+}
 .footer
 {
   margin-bottom:0%;
   text-align: left;
 }
    
+.content
+{
+  background-color: white;
+  color: black;
+}
     
