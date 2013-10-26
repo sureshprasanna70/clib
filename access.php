@@ -1,6 +1,8 @@
 <?
 include('data/db_conn.php');
 $from= $_POST["form-name"];
+if($from)
+{
 try
 {
 if(strcasecmp($from,"admin")==0)
@@ -14,20 +16,12 @@ if(strcasecmp($from,"admin")==0)
 		{
 			if(strcmp($qui["password"],$u_pass)==0)
 			{
-				session_start('idcard');
-				$_SESSION['idcard']=md5("admin");
-				echo $_SESSION['idcard'];
+				session_start();
+				$_SESSION['idcard']=base64_encode($u_name);
 				
-				
-				
-				
-
-
+				header('Location:adminpanel.php');
 			}
-			else
-			{
-				echo "Invalid Credentials";
-			}
+	
 		}
 		
 
@@ -38,5 +32,12 @@ catch(Exception $e)
 {
 	echo $e;
 }
+}
+else
+{
+	echo '<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<div class="alert alert-error">
+	You are not authorized
+	</div>';
+}
 ?>
-<a href="logout.php">LOgOut</a>
