@@ -19,10 +19,9 @@ echo '<span class="label label-info">SEARCH FILTER:'.strtoupper($opt).'</span>';
 if($opt)
 {
 	
-	$pri1="SELECT *  FROM docs WHERE $opt='$we' AND priority=1";
-	
-	$pri2="SELECT *  FROM docs where $opt='$we'AND priority=2";
-	$pri3="SELECT *  FROM docs where $opt='$we' AND priority=3";
+	$pri1="SELECT *  FROM docs WHERE $opt LIKE '%$we%' AND priority=1";
+	$pri2="SELECT *  FROM docs where $opt LIKE '%$we%'AND priority=2";
+	$pri3="SELECT *  FROM docs where $opt LIKE '%$we%' AND priority=3";
 	$book[1]=mysql_query($pri1);
 	$book[2]=mysql_query($pri2);
 	$book[3]=mysql_query($pri3);
