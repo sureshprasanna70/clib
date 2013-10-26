@@ -1,3 +1,4 @@
+
 <br>
 <div class="banner">
 <h1>
@@ -10,6 +11,8 @@
 <nav class="top-bar">
 <ul class="nav nav-tabs">
 <?php
+
+
 require_once('data/db_conn.php');
 try
 {
@@ -24,8 +27,13 @@ while ($menu = mysql_fetch_array($menu_item))
 <?php echo $menu["distext"] ?>
 </a></li>
     
-<?}?>
- <li class="pull-right"><a href="login.php">Login</a></li>
+<?}
+
+if(!isset($_SESSION['idcard']))
+{?>
+ <li class="pull-right"><a href="login.php">Login</a></li><?}else {?>
+ 	<li class="pull-right"><a href="logout.php">Logout,<?php echo base64_decode($_SESSION['idcard'])?></a></li>
+ <?}?>
 </ul>
 </nav>
 <?}
