@@ -26,20 +26,20 @@ if($opt)
 	{
 		echo'<table class="table content table-bordered table-hover" >
 		<tr>
-		<td class="span8">Book Name</td>
-		<td class="span8">Subject</td>
-		<td class="span8">Author</td>
-		<td class="span8">Expertise</td>
-		<td class="span8">Link</td>
+		<td class="span8 title">Book Name</td>
+		<td class="span8 title">Subject</td>
+		<td class="span8 title">Author</td>
+		<td class="span8 title">Expertise</td>
+		<td class="span8 title">Link</td>
 		</tr> ';
 	while($qui=mysql_fetch_array($book))
 	{
 	echo '<tr>';
-	echo '<td>'.$qui["name"].'</td>';
-	echo '<td>'.$qui["area"].'</a></td>';
-	echo '<td>'.$qui["author"].'</td>';
-	echo '<td>'.$qui["priority"].'</td>';
-	echo '<td><a href="'.$qui["location"].'">Download</a></td>';
+	echo '<td class="content">'.$qui["name"].'</td>';
+	echo '<td class="content">'.$qui["area"].'</a></td>';
+	echo '<td class="content">'.$qui["author"].'</td>';
+	echo '<td class="content">'.$qui["priority"].'</td>';
+	echo '<td class="content"><a href="'.$qui["location"].'">Download</a></td>';
 	echo '<tr>';
 	}
 	echo '</table>';

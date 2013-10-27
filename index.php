@@ -1,4 +1,5 @@
-<?session_start();?>
+<?session_start();
+include("data/db_conn.php");?>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -35,7 +36,8 @@
 					</form>
 					</div>
 					</div>
-					</div>					
+					</div>	
+					<?mysql_query("UPDATE counter SET counter = counter + 1");?>
 	
 </body>
 
