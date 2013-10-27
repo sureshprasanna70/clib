@@ -4,33 +4,33 @@ www.about.me/sureshprasannavg*/
 .banner
 {
   
-  background-color: #D3E266;
-  color:black;
+  background-color: #fff;
+  color: #3E6372;
   text-align: center;
   font-variant: small-caps;
   letter-spacing: 2px;
   padding-top: 10px;
-  font-family: serif;
+  
   padding-bottom: 10px;
+  font-family: 'Trocchi', serif;
 }
 form
 {
 margin-left: 25%;
 }
+
 body
 {
-color: green;
+background-color: #3E6372;
+color: #fff;
 background-position: center center;
 background-repeat: no-repeat;
-background: -webkit-gradient(radial, center center, 0, center center, 460, from(#D3E266), to(#53A854));
-background: -webkit-radial-gradient(circle, #D3E266, #53A854);
-background: -moz-radial-gradient(circle, #D3E266, #53A854);
-background: -ms-radial-gradient(circle, #D3E266, #53A854);
+font-family: 'Trocchi', serif;
 }
 nav,a
 {
-  background-color: #D3E266;
-  color:black;
+  background-color: #fff;
+  color:#3E6372;
   vertical-align: 10px;
   font-weight: bold;
   font-variant: small-caps;
@@ -40,7 +40,6 @@ nav,a
 }
 a:hover
 {
-  
   
   text-decoration: underline;
 }
@@ -60,9 +59,16 @@ input
   text-align: left;
 }
    
+.title
+{
+  background-color: #FFC801;
+
+  color: black;
+}
 .content
 {
   background-color: white;
+
   color: black;
 }
     

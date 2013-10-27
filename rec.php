@@ -3,7 +3,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <head>
         <title>
-            CLIB|HOME
+            CEG BOOK SHELF|RECENT
         </title>
     </head>
     <body>

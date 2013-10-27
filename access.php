@@ -36,6 +36,7 @@ catch(Exception $e)
 else
 {
 	echo '<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link href="http://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet" type="text/css">
 	<div class="alert alert-error">
 	You are not authorized
 	</div>';

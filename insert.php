@@ -3,10 +3,10 @@
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-
+<link href="http://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet" type="text/css">
 <head>
 
-<title>CLIB|ADDCONTENTS</title>
+<title>CEG BOOK SHELF|ADDCONTENTS</title>
 </head>
 <body>
 	<?include('menu.php');?>

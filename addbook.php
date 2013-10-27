@@ -4,7 +4,7 @@
 <html>
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
+<link href="http://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <head>
@@ -44,7 +44,7 @@
    		}
    	}
    		</script>
-<title>CLIB|Add</title>
+<title>CEG BOOK SHELF|Add</title>
 </head>
 <body>
 	<?include('menu.php');

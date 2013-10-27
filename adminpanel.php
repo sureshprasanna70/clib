@@ -1,13 +1,12 @@
 <?session_start();?>
 <html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <title>
-	CLIB|PANEL
+	CEG BOOK SHELF|PANEL
 </title>
 <body>
 	<?include('menu.php');?>
