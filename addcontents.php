@@ -12,6 +12,10 @@ try{
     {
 	mysql_query("INSERT INTO $home(title,content) VALUES ('$arrtitle[$i]','$arrcontent[$i]')");
     mysql_query("INSERT INTO menu(item,distext) VALUES ('$arrtitle[$i]','$arrtitle[$i]')");
+    $fp=fopen('home.php','w');
+    $filecontent="<?php include('menu.php');?>";
+    fwrite($fp,$filecontent);
+    fclose($fp);
     }
  header('Location:index.php');
 }

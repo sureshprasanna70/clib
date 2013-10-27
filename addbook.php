@@ -4,7 +4,7 @@
 <html>
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link href="http://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet" type="text/css">
+
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <head>
@@ -24,7 +24,12 @@
      		document.addbook.blink.focus() ;
      		return false;
    		}
-   		if(document.addbook.bautor.value == "" )
+      if(!document.addbook.blink.value == "" )
+      {
+      var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+      return regexp.test(document.addbook.blink.value);
+    }
+     	if(document.addbook.bautor.value == "" )
    		{
      		alert( "Provide book author!" );
      		document.addbook.bautor.focus() ;
@@ -44,7 +49,7 @@
    		}
    	}
    		</script>
-<title>CEG BOOK SHELF|Add</title>
+<title>CLIB|Add</title>
 </head>
 <body>
 	<?include('menu.php');
