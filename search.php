@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <head>
-	<title>CLIB|SEARCH RESULTS</title>
+	<title>CEG BOOK SHELF|SEARCH RESULTS</title>
 </head>
 	<body>
 		<?include('menu.php');?>
@@ -14,13 +14,18 @@
 require_once('data/db_conn.php');
 $we=$_POST["term"];
 $opt=$_POST["cla"];
+$time= explode('  ', mysql_stat($dbhandle));
+	
 echo '<span class="label label-info">SEARCH TERM:'.strtoupper($we).'</span><br><br>';
-echo '<span class="label label-info">SEARCH FILTER:'.strtoupper($opt).'</span>';
+echo '<span class="label label-info">SEARCH FILTER:'.strtoupper($opt).'</span><br><br>';
+
 if($opt)
 {
-	
+	$msc=microtime(true);
 	$query="SELECT *  FROM docs WHERE $opt LIKE '%$we%' ORDER BY priority";
 	$book=mysql_query($query);
+	$msc=microtime(true)-$msc;
+	echo '<span class="label label-info">Query Time:'.strtoupper(round($msc,6)).'</span><br><br>';
 		echo '<br><br><span class="label label-info">RESULT</span><br><br>';
 	if($book)
 	{

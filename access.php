@@ -8,8 +8,8 @@ try
 if(strcasecmp($from,"admin")==0)
 	{
 
-		$u_name=$_POST["use"];
-		$u_pass=$_POST["pass"];
+		$u_name=mysql_escape_string($_POST["use"]);
+		$u_pass=mysql_escape_string($_POST["pass"]);
 		$ques="select username,password from users where username='$u_name'";
 		$ans=mysql_query($ques);
 		while($qui=mysql_fetch_array($ans))

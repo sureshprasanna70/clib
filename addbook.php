@@ -4,11 +4,17 @@
 <html>
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
+<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <head>
 	<script>
+
+  $(function() {
+    $( document ).tooltip();
+  });
+  
 	function safety()
     	{
       
@@ -70,7 +76,8 @@
 				<option value="<?echo $i;?>"><?echo $i;?></option>
 				<?}?>
 			</select>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="label label-inverse">Rate authors expertise on this subject on scale of three</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="label label-inverse">Rate authors expertise on this subject on scale of three</div>
 		<label>Subject</label><input type="text" name="barea"/>
 		<div class="label label-inverse">Which subject is this book relevant</div>
 		<div class="form controls">
